@@ -18,7 +18,7 @@ from typing import Callable
 
 
 if len(sys.argv) != 2:
-    print(f"[{colored('X','red')}] Error:\n\t{colored('Required just 1 argument (The BIGipServerpool)','red')}\nUsage:\t",colored(f'python {sys.argv[0]} \'Set-Cookie: BIGipServerpool_kubernet_Rancher=557539594.40570.0000; path=/; Httponly; Secure; Secure; SameSite=lax\' ', 'yellow'))
+    print(f"[{colored('X','red')}] Error:\n\t{colored('Required just 1 argument (The BIGipServerpool)','red')}\nUsage:\t",colored(f'python {sys.argv[0]} \'Set-Cookie: BIGipServerpool_z_domain=557539594.40570.0000; path=/; Httponly; Secure; SameSite=lax\'', 'yellow'))
     sys.exit(1)
 
 
@@ -43,7 +43,7 @@ def parse_Cookie(cookie:str)->tuple[int, int]:
     Args:
         cookie: str
     Details:
-        The Cookie format is \'Set-Cookie: BIGipServerpool_company_domain=557539594.40570.0000; path=/; Httponly; Secure; SameSite=lax\'
+        The Cookie format is \'Set-Cookie: BIGipServerpool_z_domain=i557539594.40570.0000; path=/; Httponly; Secure; SameSite=lax\'
         Parse scaping the \'Set-Cookie Prefix\' the equal symbol, semicolon, etc.
         Only Remains the real value where the cookie in decimal representation exists
     """
